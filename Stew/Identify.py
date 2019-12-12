@@ -42,6 +42,7 @@ def ocr_qrcode_zxing(filename):
 if __name__ == '__main__':
     # file1 = open('‪D:\GHost\QRcoderecognition\Generate\qrcode.png', 'r')
     filename = r'D:\GHost\QRcoderecognition\Stew\qrcode.png'#路径自己换
+    # filename = r'D:\GHost\QRcoderecognition\Stew\20191212173842.jpeg'
     # zxing二维码识别
     ltext = ocr_qrcode_zxing(filename)  # 将图片文件里的信息转码放到ltext里面
     logger.info(u'[%s]Zxing二维码识别:[%s]!!!' % (filename, ltext))  # 记录文本信息
